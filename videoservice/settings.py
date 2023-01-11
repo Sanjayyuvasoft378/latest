@@ -87,14 +87,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(VENV_PATH, 'media_root')
 
-if DEBUG:
-    STRIPE_PUBLISHABLE_KEY = ''
-    STRIPE_SECRET_KEY = ''
 
-else:
-    # live keys
-    STRIPE_PUBLISHABLE_KEY = ''
-    STRIPE_SECRET_KEY = ''
+
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51LzfBbSAZLmnjHWef08IIM3sK2vlbQxgiRpZnCB3KX3hjgizyDoGjgewp6YW9FRWRIIwlvjrG5Dd39KElDEWuqDg00JliEVqEd'
+STRIPE_SECRET_KEY = 'sk_test_51LzfBbSAZLmnjHWeDGXSx3IQ67IAE0lYXHG0LUCcYg6kfb8PwaU9L039v68KBMQ20rezh3bphfrVuI1EjBtfdzmd00Zqo5WfNB'
 
 # Django allauth
 
